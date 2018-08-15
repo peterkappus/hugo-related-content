@@ -1,0 +1,9 @@
+html
+  head
+  body
+    h1 {{.Title}}
+    ul
+      {{range .Pages}}
+        li 
+          a href="{{.RelPermalink}}" {{ .Title}}
+      {{- end -}}

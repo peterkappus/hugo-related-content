@@ -1,0 +1,13 @@
+html
+  head
+  body
+    h1 {{.Title}}
+    {{ $related := .Site.RegularPages.Related . | first 6 }}
+    {{ with $related }}
+      h3 See Also
+      ul
+      {{ range . }}
+        li 
+          a href="{{ .RelPermalink }}" {{ .Title }}
+      {{ end }}
+    {{ end }}
