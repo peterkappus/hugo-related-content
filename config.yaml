@@ -1,7 +1,7 @@
 languageCode: en-us
 title: My New Hugo Site
 related:
-  includeNewer: true
+  includeNewer: true #include references to posts newer than the current one
   indices:
-    - name: keywords # The name of the indice, same as Front Matter's .Param key.
+    - name: keywords 
       weight: 1 # We don't really need this, but omitting it would disable the indice.
