@@ -1,7 +1,2 @@
 languageCode: en-us
 title: My New Hugo Site
-related:
-  includeNewer: true
-  indices:
-    - name: keywords # The name of the indice, same as Front Matter's .Param key.
-      weight: 1 # We don't really need this, but omitting it would disable the indice.
